@@ -1,3 +1,78 @@
-body{
+body {
+    background-image: url("C:/Users/arnab/Downloads/imageabc.jpg");  
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+	
+}
+
+.controls img {
+    cursor: pointer;
+    margin: 0 20px;
+    width: 30px;
+    transition: transform 0.5s ease;
+}
+
+.controls img:nth-child(2) {
+    width: 50px;
+}
+
+.controls img:hover {
+    transform: scale(1.2);
+}
+
+.container {
+    max-width: 70%; 
+    margin: 50px auto;
+    padding: 30px;
+    background: rgb(195,194,209);
+    background: linear-gradient(90deg, rgba(195,194,209,0.5) 0%, rgba(150,181,235,0.5) 45%, rgba(150,215,228,0.5) 81%);
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-color: transparent;
+    text-align: center;
+	
+}
+
+#display {
+    font-size: 2rem; 
+}
+
+@media (max-width: 768px) {
     
+    .container {
+        max-width: 100%;
+        padding: 20px;
+        border-radius: 15px;
+    }
+    #display {
+        font-size: 1.8rem;
+    }
+    .controls img {
+        width: 25px; 
+    }
+    .controls img:nth-child(2) {
+        width: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    
+    .container {
+        padding: 15px;
+    }
+    #display {
+        font-size: 1.6rem;
+    }
+    .controls img {
+        width: 20px; 
+        margin: 0 10px; 
+    }
+    .controls img:nth-child(2) {
+        width: 35px;
+    }
 }
